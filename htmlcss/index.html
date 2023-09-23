@@ -28,76 +28,362 @@
       referrerpolicy="no-referrer"
     />
 
-    <style>
-      /* variable css */
-      :root {
-        /* colors */
-        --first-color: #ff9f43;
-        --title-color: #2d3436;
-        --text-color: #636e72;
-        --body-color: #f1f2f6;
-        --container-color: #fff;
-
-        /* font: .5rem = 8px 1rem = 16px */
-        /* https://codebeautify.org/rem-to-px-converter */
-        --body-font: "Poppins", sans-serif;
-        --h1-font-size: 36px;
-        --h2-font-size: 24px;
-        --h3-font-size: 20px;
-        --normal-font-size: 16px;
-        --small-font-size: 14px;
-
-        --font-medium: 500;
-        --font-semibold: 600;
-        --font-bold: 700;
-      }
-
-      /* base css */
-      body,
-      button,
-      input,
-      textarea {
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-      }
-
-      body {
-        background-color: var(--body-color);
-        line-height: 1.7;
-        color: var(--text-color);
-        margin: 5%;
-      }
-
-      h1,
-      h2,
-      h3 {
-        color: var(--title-color);
-        font-weight: var(--font-semibold);
-        line-height: 1.2;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      button {
-        cursor: pointer;
-        border: none;
-        outline: none;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>sibuatwebsite.</h1>
+    <aside class="aside">
+      <a href="#home" class="nav__logo">
+        <img src="assets/logo.svg" alt="" />
+      </a>
+
+      <nav class="nav">
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="icon-home"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="icon-user-following"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#service" class="nav__link">
+                <i class="icon-briefcase"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="icon-layers"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="icon-bubble"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav__footer">
+        <span class="copyright">&copy; 2022 - 2023.</span>
+      </div>
+    </aside>
+
+    <main>
+      <!-- home -->
+      <section class="home container" id="home">
+        <div class="intro">
+          <img src="assets/logo-maskot.png" class="home__img" alt="" />
+          <h1 class="home__name">bubu du</h1>
+          <span class="home__education">Nonton Video Secara Gratis</span>
+
+          <div class="home__socials">
+            <a href="" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="" target="_blank" class="home__social-link">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+          <a href="#contact" class="btn">Daftar Kelas</a>
+
+          <div class="scroll__down">
+            <a href="#about" class="mouse__wrapper">
+              <span class="home__scroll-name">Scroll Down</span>
+              <span class="mouse">
+                <span class="wheel"></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about container section" id="about">
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__container">
+          <img src="assets/logo-avatar.png" class="about__img" alt="" />
+          <div class="about__data">
+            <div class="about__info">
+              <p class="about__description">
+                Saya bubu du, sebagai web developer. ayo belajar mulai dari
+                sekarang dengan mengakses semua materinya kapan pun dimana pun
+                tanpa batas.
+              </p>
+              <a href="" class="btn">Suasana Belajar</a>
+            </div>
+
+            <div class="about__skills">
+              <div class="skills_data">
+                <div class="skills__title">
+                  <h3 class="skills__name">Web Development</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <div class="skills_percentage development"></div>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills__title">
+                  <h3 class="skills__name">UI/UX design</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <div class="skills_percentage design"></div>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills__title">
+                  <h3 class="skills__name">Mobile Apps</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <div class="skills_percentage photography"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__boxes">
+          <div class="about__box">
+            <i class="about__icon icon-event"></i>
+            <div>
+              <h3 class="about__title">198</h3>
+              <span class="about__subtitle">Kelas</span>
+            </div>
+          </div>
+
+          <div class="about__box">
+            <i class="about__icon icon-people"></i>
+            <div>
+              <h3 class="about__title">56</h3>
+              <span class="about__subtitle">Murid</span>
+            </div>
+          </div>
+
+          <div class="about__box">
+            <i class="about__icon icon-graduation"></i>
+            <div>
+              <h3 class="about__title">200</h3>
+              <span class="about__subtitle">Karya</span>
+            </div>
+          </div>
+
+          <div class="about__box">
+            <i class="about__icon icon-graph"></i>
+            <div>
+              <h3 class="about__title">2300</h3>
+              <span class="about__subtitle">Aktivitas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="service container section" id="service">
+        <h2 class="section__title">Services</h2>
+        <div class="service__container">
+          <div class="service__card">
+            <img src="assets/icon_branding.png" class="service__img" alt="" />
+            <h3 class="service__title">UI/UX design</h3>
+            <p class="service__description">
+              In addition to web, graphic design services are also available.
+            </p>
+          </div>
+
+          <div class="service__card">
+            <img src="assets/icon_website.png" class="service__img" alt="" />
+            <h3 class="service__title">Web Development</h3>
+            <p class="service__description">
+              I create pixel perfect website design and code for personal or
+              business websites.
+            </p>
+          </div>
+
+          <div class="service__card">
+            <img src="assets/icon_app.png" class="service__img" alt="" />
+            <h3 class="service__title">Mobile Apps</h3>
+            <p class="service__description">
+              When I help you setup a project, this means full service help from
+              end to end.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section class="work container section" id="portfolio">
+        <h2 class="section__title">Recent Works</h2>
+
+        <div class="work__filter">
+          <span class="work__item">Everything</span>
+          <span class="work__item">Creative</span>
+          <span class="work__item">Art</span>
+          <span class="work__item">Design</span>
+          <span class="work__item">Branding</span>
+        </div>
+
+        <div class="work__container">
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-1.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Design</span>
+            <h3 class="work__title">Project Management Illustration</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-2.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Art</span>
+            <h3 class="work__title">Guest App Walkthrough Screens</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-3.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Branding</span>
+            <h3 class="work__title">Delivery App Wireframe</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-4.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Design</span>
+            <h3 class="work__title">Onboarding Motivation</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-5.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Creative</span>
+            <h3 class="work__title">iMac Mockup Design</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <div class="work__thumbnail">
+              <img src="assets/work-6.svg" class="work__img" alt="" />
+              <div class="work__mask"></div>
+            </div>
+
+            <span class="work__category">Art</span>
+            <h3 class="work__title">Game Store App Concept</h3>
+            <a href="" class="work__button">
+              <i class="icon-link work__button-icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact container section" id="contact">
+        <h2 class="section__title">Get It Touch</h2>
+
+        <div class="contact__container">
+          <div class="contact__info">
+            <h3 class="contact__title">Let's talk about everything!</h3>
+            <p class="contact_details">Daftarkan Diri Kamu. 👋</p>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__form-group">
+              <div class="contact__form-div">
+                <input
+                  type="text"
+                  class="contact__form-input"
+                  placeholder="Name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <input
+                  type="email"
+                  class="contact__form-input"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+
+            <div class="contact__form-div">
+              <input
+                type="text"
+                class="contact__form-input"
+                placeholder="Subject"
+              />
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Kirim Masukan</button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
