@@ -1,0 +1,144 @@
+========== SIDEBAR ==========
+.copyright
+&copy; 2022 - 2023.
+
+========== HOME ==========
+.home__title
+bubu du
+
+.home__education
+Nonton Video Secara Gratis
+
+.home__button
+Daftar Kelas
+
+.home__social-links
+https://www.instagram.com/
+
+https://www.twitter.com/
+
+https://www.behance.com/
+
+https://www.dribble.com/
+
+https://www.pinterest.com/
+
+.home__scroll-name
+Scroll Down
+
+========== ABOUT ==========
+.section__title
+About Me
+
+.about__description
+Saya bubu du, sebagai web developer. ayo belajar mulai dari sekarang dengan mengakses semua materinya kapan pun dimana pun tanpa batas.
+
+.about__button
+Suasana Belajar
+
+.skills__name | .skills__number
+Web Development
+90%
+
+UI/UX design
+80%
+
+Mobile Apps
+60%
+
+.about__title | .about__subtitle
+198
+Kelas
+
+56
+Murid
+
+200
+Karya
+
+2300
+Aktivitas
+
+========== SERVICES ==========
+.section__title
+Services
+
+const data = [
+  {
+    id: 1,
+    image: Image1,
+    title: "UI/UX design",
+    description:
+      "In addition to web, graphic design services are also available.",
+  },
+  {
+    id: 2,
+    image: Image2,
+    title: "Web Development",
+    description:
+      "I create pixel perfect website design and code for personal or business websites.",
+  },
+  {
+    id: 3,
+    image: Image3,
+    title: "Mobile Apps",
+    description:
+      "When I help you setup a project, this means full service help from end to end.",
+  },
+];
+
+========== WORKS ==========
+.section__title
+Recent Works
+
+const Menu = [
+  {
+    id: 1,
+    image: Work1,
+    title: "Project Management Illustration",
+    category: "Design",
+  },
+  {
+    id: 2,
+    image: Work2,
+    title: "Guest App Walkthrough Screens",
+    category: "Art",
+  },
+  {
+    id: 3,
+    image: Work3,
+    title: "Delivery App Wireframe",
+    category: "Branding",
+  },
+  ,
+  {
+    id: 4,
+    image: Work4,
+    title: "Onboarding Motivation",
+    category: "Design",
+  },
+  ,
+  {
+    id: 5,
+    image: Work5,
+    title: "iMac Mockup Design",
+    category: "Creative",
+  },
+  ,
+  {
+    id: 6,
+    image: Work6,
+    title: "Game Store App Concept",
+    category: "Art",
+  },
+];
+
+========== CONTACT ==========
+.section__title
+Get In Touch
+
+.contact__title
+Let's talk about everything!
+
+.contact__details
+Daftarkan Diri Kamu. 👋
